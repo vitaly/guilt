@@ -1,0 +1,9 @@
+patchbomb:
+==========
+
+git-format-patch -o /tmp/patches-$$/ -n -s <since>[..<until>]
+git-send-email --no-chain-reply-to --compose \
+--to linux-kernel@vger.kernel.org \
+--cc linux-fsdevel@vger.kernel.org \
+/tmp/patches-$$/
+
