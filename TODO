@@ -7,7 +7,6 @@ e.g., email may not be necessary as git can do that for us.
 	add		done		add a file
 	applied		done		list applied patches
 	delete		done		delete a patch from queue
-	email				patchbomb
 	fold				fold named patches into current
 	header		done		print the header for a patch
 	help				display help
@@ -16,12 +15,13 @@ e.g., email may not be necessary as git can do that for us.
 	merge
 	new		done		create a new patch
 	next		done		display next patch on the stack
+	patchbomb	done		email a series of commits as patches
 	pop		done		pop one or more patches
 	prev		done		display previous patch on the stack
 	push		done		push one of more patches
 	rebase				rebase the current patches
-	remote-pull/repo-pull
-	remote-push/repo-push
+	rpull				pull from a repo
+	rpush				push to a repo
 	rename				rename a patch
 	refresh		done		refresh the current patch
 	rm		done		remove a file
