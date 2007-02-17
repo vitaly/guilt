@@ -1,0 +1,37 @@
+Just an idea...
+
+When I look at the series file for Unionfs, I see 3 distinct sections:
+
+1) patches already pushed to kernel.org
+2) patches pending push to kernel.org
+3) patches currently being developed
+
+On a number of occasions, I want to quickly push/pop to a certain boundry
+between the 3 categories. (Suppose, I am about to push things to kernel.org
+- I want to have all the patches in #1 and #2 pushed onto the stack, but
+none of #3.) One way would be to specify some kind of tag in the series file
+to indicate where one category ends and another starts.
+
+Here's an idea about how to annotate the series file to know about such
+logical breaks via a mechanism I call "tags".
+
+Things to keep in mind:
+
+1) The series file should work in quilt without modifications
+2) The tags should be easily visible
+3) The tags should not be painful to look at
+4) The code necessary to process the tags should not be very complex
+5) Arbitrary number of tags should be allowed
+6) Multiple tags should be allowed for any one part of series file (in other
+   words, any number of tags can be placed between the same two patches, and
+   using one one of the tags will yield the same result)
+7) push/pull should check whether patchname supplied is a tag, if it is
+   translate it to the appropriate patchname
+8) series/applied/unapplied/top should allow the user to see the tag names
+   placed within the outpu (with the right option (-t ?)) 
+
+For example, the following format satisfies all of the items above:
+
+#@tagname
+
+where tagname = [^/\0\n\r\w]+
