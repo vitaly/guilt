@@ -50,3 +50,5 @@ Here are some things I want to do one of these days...
 - Make sh a requirement, not bash
 
 - Make things as portable as git
+
+- import-commit should grab the author field and add a From: line
