@@ -11,6 +11,7 @@ e.g., email may not be necessary as git can do that for us.
 	header		done		print the header for a patch
 	help				display help
 	import				import a patch
+	import-commit	done		import a (series of) commit(s) as patches
 	init		done		initialize patch queue
 	merge
 	new		done		create a new patch
