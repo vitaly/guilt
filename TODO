@@ -13,7 +13,7 @@ e.g., email may not be necessary as git can do that for us.
 	delete		done		delete a patch from queue
 	fold				fold named patches into current
 	header		done		print the header for a patch
-	help				display help
+	help		done		display help
 	import				import a patch
 	import-commit	done		import a (series of) commit(s) as patches
 	init		done	done	initialize patch queue
