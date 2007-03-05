@@ -11,6 +11,7 @@ e.g., email may not be necessary as git can do that for us.
 	add		done		add a file
 	applied		done		list applied patches
 	delete		done		delete a patch from queue
+	files		done	done	list files topmost patch modifies
 	fold				fold named patches into current
 	header		done		print the header for a patch
 	help		done		display help
@@ -18,22 +19,22 @@ e.g., email may not be necessary as git can do that for us.
 	import-commit	done		import a (series of) commit(s) as patches
 	init		done	done	initialize patch queue
 	merge
-	new		done		create a new patch
+	new		done	done	create a new patch
 	next		done		display next patch on the stack
 	patchbomb	done		email a series of commits as patches
 	pop		done		pop one or more patches
-	prev		done		display previous patch on the stack
+	prev		done	done	display previous patch on the stack
 	push		done		push one of more patches
 	rebase				rebase the current patches
 	rpull				pull from a repo
 	rpush				push to a repo
 	rename				rename a patch
-	refresh		done		refresh the current patch
+	refresh		done	done	refresh the current patch
 	rm		done		remove a file
 	series		done		list all patches
 	status		done		display current working dir status
-	top		done		display current patch name
-	unapplied	done		display unapplied patches
+	top		done	done	display current patch name
+	unapplied	done	done	display unapplied patches
 
 
 Misc Bugs/Enhancements:
@@ -56,3 +57,7 @@ Here are some things I want to do one of these days...
 - Make things as portable as git
 
 - Manual pages
+
+- Check patch name for ^/ and /../ as it would wreak havoc when we touch the
+  patch file/etc.
+
