@@ -48,9 +48,7 @@ Here are some things I want to do one of these days...
 
 - Fix path munging in push_patch
 
-- Make guilt-* work from any dir
-
-- guilt-push should output info if there is an offset
+- Make guilt-* work from any dir ( => make regression tests to check that)
 
 - Make sh a requirement, not bash
 
@@ -58,6 +56,8 @@ Here are some things I want to do one of these days...
 
 - Manual pages
 
-- Check patch name for ^/ and /../ as it would wreak havoc when we touch the
-  patch file/etc.
+- Make sure whitespace in patch names doesn't break anything ( => make
+  regression tests)
 
+- Make guilt-help more intelligent about where it looks for man pages (maybe
+  try adding `dirname $0`/../man/ to the MANPATH inside guilt-help?)
