@@ -8,31 +8,31 @@ e.g., email may not be necessary as git can do that for us.
 -------------------------------------------------------------------------------
 
 	<>		done	done	Default/no-command/usage help
-	add		done		add a file
-	applied		done		list applied patches
-	delete		done		delete a patch from queue
+	add		done	done	add a file
+	applied		done	done	list applied patches
+	delete		done	done	delete a patch from queue
 	files		done	done	list files topmost patch modifies
-	fold				fold named patches into current
-	header		done		print the header for a patch
-	help		done		display help
+	fold		done	done	fold named patches into current
+	header		done	done	print the header for a patch
+	help		done	done	display help
 	import				import a patch
-	import-commit	done		import a (series of) commit(s) as patches
+	import-commit	done	done	import a (series of) commit(s) as patches
 	init		done	done	initialize patch queue
 	merge
 	new		done	done	create a new patch
-	next		done		display next patch on the stack
-	patchbomb	done		email a series of commits as patches
-	pop		done		pop one or more patches
+	next		done	done	display next patch on the stack
+	patchbomb	done	done	email a series of commits as patches
+	pop		done	done	pop one or more patches
 	prev		done	done	display previous patch on the stack
-	push		done		push one of more patches
+	push		done	done	push one of more patches
 	rebase				rebase the current patches
 	rpull				pull from a repo
 	rpush				push to a repo
 	rename				rename a patch
 	refresh		done	done	refresh the current patch
-	rm		done		remove a file
-	series		done		list all patches
-	status		done		display current working dir status
+	rm		done	done	remove a file
+	series		done	done	list all patches
+	status		done	done	display current working dir status
 	top		done	done	display current patch name
 	unapplied	done	done	display unapplied patches
 
@@ -54,8 +54,6 @@ Here are some things I want to do one of these days...
 
 - Make things as portable as git
 
-- Manual pages
-
 - Make sure whitespace in patch names doesn't break anything ( => make
   regression tests)
 
@@ -67,3 +65,6 @@ Here are some things I want to do one of these days...
 
 - If autotagging is disabled, should we remove any corresponding tags? Tags
   could have been disabled because of name collisions.
+
+- guilt-fold: add -k to keep patchfile around
+
