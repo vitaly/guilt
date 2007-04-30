@@ -15,7 +15,7 @@ e.g., email may not be necessary as git can do that for us.
 	fold		done	done	fold named patches into current
 	header		done	done	print the header for a patch
 	help		done	done	display help
-	import				import a patch
+	import		done	done	import a patch
 	import-commit	done	done	import a (series of) commit(s) as patches
 	init		done	done	initialize patch queue
 	merge
