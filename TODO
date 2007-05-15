@@ -25,7 +25,7 @@ e.g., email may not be necessary as git can do that for us.
 	pop		done	done	pop one or more patches
 	prev		done	done	display previous patch on the stack
 	push		done	done	push one of more patches
-	rebase				rebase the current patches
+	rebase		done	done	rebase the current patches
 	rpull				pull from a repo
 	rpush				push to a repo
 	rename				rename a patch
@@ -68,3 +68,4 @@ Here are some things I want to do one of these days...
 
 - guilt-fold: add -k to keep patchfile around
 
+- guilt-rebase: create at least _some_ regression tests
