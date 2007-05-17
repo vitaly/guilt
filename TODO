@@ -13,6 +13,7 @@ e.g., email may not be necessary as git can do that for us.
 	delete		done	done	delete a patch from queue
 	files		done	done	list files topmost patch modifies
 	fold		done	done	fold named patches into current
+	graph		done	done	generate a patch dependency graph
 	header		done	done	print the header for a patch
 	help		done	done	display help
 	import		done	done	import a patch
