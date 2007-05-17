@@ -1,0 +1,11 @@
+Currently, if a guilt operation is killed by the user mid-way through, it is
+possible that temporary files are left over. For example, the guilt-graph
+command creates a filename hash cache in .git/patches/$branch/.graphcache.$$.
+If guilt-graph is killed before it deletes the cache, the cache consisting
+of potentially many files is left on the filesystem.
+
+Another command which creates a temporary cache is the guilt-rebase command.
+
+Bash provides a way to set hooks which get executed when certain signals are
+received, guilt should use these hooks whenever possible to run cleanup code
+as necessary.
