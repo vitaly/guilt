@@ -1,0 +1,14 @@
+The current rebase command assumes all patches will either apply, or will
+not have to be applied (in other words, they were included upstream). One
+problem that a user rebasing a set of patches might come across, is the fact
+that sometimes, a patch needs to be applied, however it does not apply
+cleanly - and therefore, it should be fixed up.
+
+Guilt should follow the lead of git, and allow the user to take one of the
+following actions when a patch which does not apply cleanly is encountered,
+and the user is dropped into a shell:
+
+	--continue :: the code has been fixed up, continue rebasing
+	--skip :: skip the current patch, continue rebasing
+	--abort :: abort rebasing, restore repository state to what it was
+			 before rebasing began
