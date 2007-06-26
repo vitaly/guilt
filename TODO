@@ -45,7 +45,9 @@ Here are some things I want to do one of these days...
 
 - Fix push/pop regression tests to cover --all/multi-patch cases
 
-- Add more regression tests
+- Add more regression tests:
+
+	- guilt-refresh --git
 
 - Fix path munging in push_patch
 
