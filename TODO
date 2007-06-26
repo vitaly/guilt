@@ -51,8 +51,6 @@ Here are some things I want to do one of these days...
 
 - Make guilt-* work from any dir ( => make regression tests to check that)
 
-- Make sh a requirement, not bash
-
 - Make things as portable as git
 
 - Make sure whitespace in patch names doesn't break anything ( => make
@@ -66,7 +64,5 @@ Here are some things I want to do one of these days...
 
 - If autotagging is disabled, should we remove any corresponding tags? Tags
   could have been disabled because of name collisions.
-
-- guilt-fold: add -k to keep patchfile around
 
 - guilt-rebase: create at least _some_ regression tests
