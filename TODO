@@ -43,6 +43,11 @@ Misc Bugs/Enhancements:
 
 Here are some things I want to do one of these days...
 
+- Make things work with an arbitrary point in history
+  $ git-checkout sometag
+  $ guilt-init
+  *poop*
+
 - Fix push/pop regression tests to cover --all/multi-patch cases
 
 - Add more regression tests:
@@ -68,3 +73,7 @@ Here are some things I want to do one of these days...
   could have been disabled because of name collisions.
 
 - guilt-rebase: create at least _some_ regression tests
+
+- guilt-new, guilt-fork, etc.: warn/die if the new patch name ends with '~'
+
+- guilt-diff
