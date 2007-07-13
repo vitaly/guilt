@@ -11,6 +11,7 @@ e.g., email may not be necessary as git can do that for us.
 	add		done	done	add a file
 	applied		done	done	list applied patches
 	delete		done	done	delete a patch from queue
+	diff		done	done	various diffs
 	files		done	done	list files topmost patch modifies
 	fold		done	done	fold named patches into current
 	graph		done	done	generate a patch dependency graph
@@ -76,4 +77,6 @@ Here are some things I want to do one of these days...
 
 - guilt-new, guilt-fork, etc.: warn/die if the new patch name ends with '~'
 
-- guilt-diff
+- guilt-diff: more modes
+
+- refresh, add options --strip-trailing-whitespace, --diffstat
