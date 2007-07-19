@@ -55,6 +55,8 @@ Here are some things I want to do one of these days...
 
 	- guilt-refresh --git
 
+	- guilt-refresh --diffstat
+
 - Fix path munging in push_patch
 
 - Make guilt-* work from any dir ( => make regression tests to check that)
