@@ -32,6 +32,7 @@ e.g., email may not be necessary as git can do that for us.
 	rpush				push to a repo
 	rename				rename a patch
 	refresh		done	done	refresh the current patch
+	repair		done	done	repair guilt repo state
 	rm		done	done	remove a file
 	series		done	done	list all patches
 	status		done	done	display current working dir status
@@ -68,9 +69,6 @@ Here are some things I want to do one of these days...
 
 - Make guilt-help more intelligent about where it looks for man pages (maybe
   try adding `dirname $0`/../man/ to the MANPATH inside guilt-help?)
-
-- Autotagging creates ${branch}_{top,bottom,base} tags, allow easy removal
-  of such tags
 
 - If autotagging is disabled, should we remove any corresponding tags? Tags
   could have been disabled because of name collisions.
