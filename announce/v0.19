@@ -1,0 +1,23 @@
+Josef 'Jeff' Sipek (18):
+      guilt-applied: added -c to list the commit hash for the patch
+      guilt-new: Fix [ syntax
+      patchbomb: Friendly wrapper for git-format-patch & git-send-email
+      delete: Added argument -f to remove patch file
+      Guilt v0.19-rc1
+      regression: test new patch insertion
+      regression: test new patch insertion at the end
+      regression: Test push/pop given a patch name
+      regression: Test for guilt-init in a already initialized branch
+      regression: Test guilt-init on non-master branch
+      regression: Fix test descriptions
+      Centralize editor determining code
+      new: added -e to edit the patch description interactively
+      Makefile: Forgot to add guilt-patchbomb to the list of scripts
+      regression: Fix regression test failure
+      patchbomb: Added -n flag
+      regression: Fixed regression suite failure
+      Guilt v0.19
+
+Theodore Ts'o (1):
+      Use patch file's modtime as the git author and commiter date
+

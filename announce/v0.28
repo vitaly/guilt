@@ -1,0 +1,53 @@
+Guilt v0.28 is available for download (once it mirrors out on kernel.org).
+
+Guilt (Git Quilt) is a series of bash scripts which add a Mercurial
+queues-like functionality and interface to git.
+
+(kernel.org seems to be slow at mirroring things today, so please be
+patient)
+
+Tarballs:
+http://www.kernel.org/pub/linux/kernel/people/jsipek/guilt/
+
+Git repo:
+git://git.kernel.org/pub/scm/linux/kernel/git/jsipek/guilt.git
+
+
+This release took _far_ too long to make. The major changes since v0.27
+include:
+
+ - fix for insecure handling of temporary files (CVE-2007-5207)
+ - push and pop now support -n <num> to push/pop specified number of patches
+ - import-commit can import any commit from any branch
+ - couple of other small bugfixes/tweaks
+
+For more details about any of the commits, check the commits.
+
+As always, patches, and other feedback is welcome.
+
+Josef "Jeff" Sipek.
+
+------------
+Changes since v0.27:
+
+David Chinner (1):
+      {push,pop}: Add -n <number of patches> option
+
+Erez Zadok (1):
+      Documentation fixups
+
+Eric Lesh (2):
+      guilt-help: Make guilt-cmd --help show the right man page
+      [GUILT PATCH] guilt-import-commit: Import commits from any branch
+
+Josef 'Jeff' Sipek (6):
+      {next,prev,top}: Update usage strings & docs
+      guilt: Fix insecure handling of temporary files
+      patchbomb: Be quiet when there are no Cc lines in patch header
+      guilt: fixed bad interaction between push_patch() and git
+      guilt: Fixed regexp matching the beginning of the patch
+      Guilt v0.28
+
+Peter Zijlstra (1):
+      guilt: allow for full path in {top,next,prev}
+

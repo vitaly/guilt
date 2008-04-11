@@ -1,0 +1,69 @@
+Guilt v0.27 is available for download (once it mirrors out on kernel.org).
+
+Guilt (Git Quilt) is a series of bash scripts which add a Mercurial
+queues-like functionality and interface to git.
+
+Tarballs:
+http://www.kernel.org/pub/linux/kernel/people/jsipek/guilt/
+
+Git repo:
+git://git.kernel.org/pub/scm/linux/kernel/git/jsipek/guilt.git
+
+
+Alright, I'm trying to get back to the 2-week release schedule, so here's
+v0.27!
+
+There has been a number of changes in those two weeks, Out of the 20
+commits, about half of them are bug fixes of all sorts - mostly preventive
+(does anyone actually use whitespace in their branch names?).
+
+The major changes include some performance speedups. Little bit thought
+(there's more to come!) went into making guilt-push faster, 0.27 is about 8%
+faster than 0.26 on push. The other major thing is the infrastructure (which
+turned out to be really simple) for hooks. Currently, only one hook is
+supported (guilt-delete) but that'll change sooner or later.
+
+And the last major change under the hood: guilt now checks and expects git
+1.5.
+
+Other new features:
+	guilt-series -e	to edit the series file by hand
+	guilt-header -e to edit a patch's header
+	guilt-refresh --diffstat to include a diffstat in the patch file
+
+As always, patches, and other feedback is welcome.
+
+Josef "Jeff" Sipek.
+
+------------
+Changes since v0.26:
+
+Dmitry Monakhov (2):
+      Fix guilt-import patch naming
+      Add series editor support
+
+Eric Lesh (4):
+      Handles slashes in branch names
+      Makefile: don't install *~ files
+      guilt-rebase: Make fast-forward work
+      guilt-header: Add -e option for editing
+
+Josef 'Jeff' Sipek (14):
+      refresh: Added --diffstat option
+      init: Be careful with whitespace in branch names
+      guilt: check git version and bail if version is not supported
+      guilt: Create infrastructure for guilt hooks
+      delete: Added delete-patch hook
+      pop: Check if no patches are applied
+      guilt: Do not scan entire patch file when not necessary
+      guilt: git-apply --index can be used to update the index
+      guilt: Remove unnecessary reading of the status file
+      push_patch: propagate return code to caller
+      rebase: warn the user that rebase is experimental
+      Documentation: document series -e option
+      header: rewrite option parsing and patch searching
+      Guilt v0.27
+
+Michael Halcrow (1):
+      import-commit: Retry with a different patch name if necessary
+

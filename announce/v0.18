@@ -1,0 +1,12 @@
+Josef 'Jeff' Sipek (10):
+      push_patch should be more careful when applying patches
+      pop_patch should be quieter
+      Removed debug line out of push_patch
+      guilt-pop is now less brain damaged
+      Add -m & -s args to guilt-new
+      push_patch: look at diff stats instead of number of lines in patch
+      Check HEAD hash against what we expect before push/pop/refresh
+      Small cleanup in push_patch
+      TODO moved to a separate branch
+      Guilt v0.18
+

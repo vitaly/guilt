@@ -1,0 +1,51 @@
+To: guilt@lists.josefsipek.net
+Cc: linux-kernel@vger.kernel.org, git@vger.kernel.org
+Subject: [ANNOUNCE] Guilt v0.29
+
+Guilt v0.29 is available for download (once it mirrors out on kernel.org).
+
+Guilt (Git Quilt) is a series of bash scripts which add a Mercurial
+queues-like functionality and interface to git.
+
+Tarballs:
+http://www.kernel.org/pub/linux/kernel/people/jsipek/guilt/
+
+Git repo:
+git://git.kernel.org/pub/scm/linux/kernel/git/jsipek/guilt.git
+
+
+This release is quite uneventful.  It is made up of a few fixes here and
+there, and complete regression suite rewrite.  Unfortunately, most of the
+exciting Guilt development went on in a topic branch, but the changes are
+far too invasive for me to include them in v0.29, so I'm going to merge that
+in for v0.30.
+
+As always, patches, and other feedback is welcome.
+
+Josef "Jeff" Sipek.
+
+------------
+Changes since v0.28:
+
+Josef 'Jeff' Sipek (20):
+      repair: new command to repair repository state
+      patchbomb: Git parses the patch mboxes and extracts Cc lines automatically
+      push: fix whitespace handling
+      regression: rewrote regression suite core
+      regression: test 010: test the init code
+      regression: test 011: test failure of commands on non-init'd repo
+      regression: test 020: test push code
+      regression: test 023: test top code
+      regression: test 021: test pop code
+      regression: test 060: test files code
+      regression: test 022: test applied code
+      regression: test 024: test unapplied code
+      regression: test 025: test new code
+      regression: test 026: test delete code
+      regression: test 027: test refresh code
+      push: output current patch name, not cmd-line argument
+      Use 'git <cmd>' instead of 'git-cmd'
+      header: fix patch name existence in the series
+      regression: add tests for guilt-header
+      Guilt v0.29
+

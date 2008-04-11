@@ -1,0 +1,41 @@
+Guilt v0.23 is available for download (once it mirrors out on kernel.org).
+
+Guilt (Git Quilt) is a series of bash scripts which add a Mercurial
+queues-like functionality and interface to git.
+
+Tarballs:
+http://www.kernel.org/pub/linux/kernel/people/jsipek/guilt/
+
+Git repo:
+git://git.kernel.org/pub/scm/linux/kernel/git/jsipek/guilt.git
+
+
+<<SUMMARY>>
+
+As always, patches, and other feedback is welcome.
+
+Josef "Jeff" Sipek.
+
+------------
+Changes since v0.22:
+
+Brandon Philips (2):
+      Get usage information from the USAGE variable
+      Remaining guilt documentation
+
+Josef 'Jeff' Sipek (14):
+      Docs: Ignore generated usage-*.txt files
+      Docs: Consistified the man pages
+      Docs: Reimplemented cmd-list generation script in sh
+      Docs: Added import-commit manpage
+      Docs: Fixed up patchbomb documentation
+      Docs: Include version Guilt version number in page footer
+      Remove pop_patch as there are no real users
+      fold: fold a patch into the topmost patch
+      delete: use series_remove_patch instead of opencoding the logic
+      fold: fixed patch backup creation
+      Docs: guilt-fold manpage
+      new: escape new patch name properly when changing the series file
+      fork: fork the topmost applied patch
+      Guilt v0.23
+

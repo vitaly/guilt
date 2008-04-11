@@ -1,0 +1,30 @@
+Horst H. von Brand (2):
+      Fix up Makefiles
+      Run regression on the current version
+
+Josef 'Jeff' Sipek (24):
+      A minimalistic makefile
+      Contributing doc file
+      Added guilt-add
+      Added guilt-status
+      Expanded the HOWTO
+      Added usage strings to all commands
+      All arguments to guilt-add are filenames
+      More thorough argument checking & display usage string on failure
+      Changed status file format to include the hash of the commit
+      Fixed guilt-refresh doing an unnecessary and somewhat wrong pop&push
+      Fixed up guilt-{delete,pop} not matching the patch name properly
+      Fixed guilt-{delete,pop} regexps some more
+      Force UTC as timezone for regression tests
+      Fixed a bug in guilt-pop introduced by the status file format switch
+      Error messages should go to stderr
+      Merge branch 'usage'
+      Merge branch 'status-file'
+      Yet another TODO update
+      Added guilt-rm
+      Makefile update & cleanup
+      pop: Display the name of the patch from the status file, not the series file
+      new: Create dir structure for the patch if necessary
+      Documentation/TODO: Mark guilt-rm as done
+      Guilt v0.17
+

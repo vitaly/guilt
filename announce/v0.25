@@ -1,0 +1,42 @@
+Guilt v0.25 is available for download (once it mirrors out on kernel.org).
+
+Guilt (Git Quilt) is a series of bash scripts which add a Mercurial
+queues-like functionality and interface to git.
+
+Tarballs:
+http://www.kernel.org/pub/linux/kernel/people/jsipek/guilt/
+
+Git repo:
+git://git.kernel.org/pub/scm/linux/kernel/git/jsipek/guilt.git
+
+
+Really the only major changes are the new commands: import and rebase.
+
+guilt-import allows one to import a patch into the Guilt series easily
+
+guilt-rebase is very similar to git-rebase - it detects patches that were
+pushed upstream. NOTE: This command is still not perfect, so use it with
+caution.
+
+As always, patches, and other feedback is welcome.
+
+Josef "Jeff" Sipek.
+
+------------
+Changes since v0.24:
+
+Josef 'Jeff' Sipek (13):
+      Docs: Fixed two small typos
+      import: import a patch command
+      import: Added -P to specify a name of the patch file within guilt
+      new: Add an empty line after the message/signed-off-by
+      guilt: be more careful when parsing hash ranges
+      patchbomb: Added --in-reply-to argument
+      rebase: Rebase pushed patches against an upstream branch
+      docs: Skeleton of the rebase docs
+      rebase: removed some leftover bits from git-cherry
+      rebase: comment out patch instead of removing it
+      rebase: created a helper function to pop all patches
+      Fixed $PAGER detection logic
+      Guilt v0.25
+

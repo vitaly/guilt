@@ -1,0 +1,31 @@
+Brandon Philips (1):
+      Initial guilt documentation
+
+Josef 'Jeff' Sipek (14):
+      makefile: Include import-commit in list of scripts
+      Fixed do_make_header to include From:
+      push: Fixed unkown patchname pushing all patches
+      add/rm: Use print_usage instead of using $USAGE directly
+      guilt: Document push_patch's new argument
+      refresh: Make sure there is a patch applied before doing a refresh
+      Reorder makefile rules & use .PHONY
+      docs: Commands should be on a separate line
+      Ignore *.html, *.1 and *.7 in Documentation/
+      refresh: Use ~ as the backup file suffix
+      Install manpages to $(PREFIX)/man
+      Removed print_usage as it shouldn't be used
+      help: A simple help command
+      Guilt v0.21
+
+Theodore Ts'o (1):
+      Make "guilt push" match "quilt push" when the patch doesn't apply
+
+Yasushi SHOJI (7):
+      Allow command abbreviation
+      Guilt: Format command list in usage
+      Guilt: Do not allow patch name duplication
+      Guilt: Replace print_usage and exit 1 with usage and die in git-sh-setup
+      Guilt: add -v to guilt-series
+      Guilt: series -v: Fix zero applied patch case
+      Guilt: add a new command "files"
+

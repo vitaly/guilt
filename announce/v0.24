@@ -1,0 +1,36 @@
+Guilt v0.24 is available for download (once it mirrors out on kernel.org).
+
+Guilt (Git Quilt) is a series of bash scripts which add a Mercurial
+queues-like functionality and interface to git.
+
+Tarballs:
+http://www.kernel.org/pub/linux/kernel/people/jsipek/guilt/
+
+Git repo:
+git://git.kernel.org/pub/scm/linux/kernel/git/jsipek/guilt.git
+
+
+<<SUMMARY>>
+
+As always, patches, and other feedback is welcome.
+
+Josef "Jeff" Sipek.
+
+------------
+Changes since v0.23:
+
+Eric Lesh (4):
+      guilt-fork: Rename patches sequentially (ala quilt)
+      guilt-fork: Use first argument (if given) as name of new patch
+      Documentation/guilt-fork: document argument to choose name of new patch
+      guilt: Add -h option to show man pages
+
+Josef 'Jeff' Sipek (7):
+      status: Major cleanup of status
+      Docs: Document all options for status
+      status: Added -n to hide status prefix from ouput
+      status: change into the top of the repo before checking for changes
+      Docs: Fixed up description of series -v
+      pop: Added -f to force popping of the patch
+      Guilt v0.24
+
